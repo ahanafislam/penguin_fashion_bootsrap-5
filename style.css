@@ -1,0 +1,124 @@
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root {
+    /* Color */
+    --h-dark-color: #363958;
+    --p-dark-color: #3E3E3E;
+    --light-color: #FABE4C;
+
+    /* Gradient Background */
+    --gradient-bg: linear-gradient(180deg, #A4BC46 0%, #85A019 100%);
+
+    /* Fonts */
+    --ff-roboto: 'Roboto', sans-serif;
+    --ff-bebas: 'Bebas Neue', cursive;
+
+    /* Font Weight */
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-bold: 700;
+    --fw-black: 900;
+}
+
+/* Typography */
+body {
+    font-family: var(--ff-roboto);
+    font-size: 1rem;
+    color: var(--p-dark-color);
+    line-height: 26px;
+    font-weight: var(--fw-regular);
+}
+
+h1, h2 {
+    font-family: var(--ff-bebas);
+}
+
+h1, h2, h3 {
+    color: var(--h-dark-color);
+}
+
+h1 {
+    font-size: 60px;
+    line-height: 72px;
+    letter-spacing: 0em;
+}
+
+h2 {
+    font-size: 36px;
+    line-height: 43px;
+}
+
+h3 {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: var(--fw-bold);
+}
+
+.price {
+    color: var(--light-color);
+    font-weight: var(--fw-black);
+    font-size: 36px;
+    line-height: 42px;
+}
+
+.text-penguin {
+    color: var(--light-color);
+}
+
+@media only screen and (min-width: 600px) {
+    h1 {
+        font-size: 80px;
+        line-height: 96px;
+    }
+    
+    h2 {
+        font-size: 48px;
+        line-height: 58px;
+    }
+}
+
+/* Common Style */
+.btn-penguin {
+    background-image: var(--gradient-bg);
+    color: white;
+    font-weight: var(--fw-medium);
+    font-size: 16px;
+    line-height: 24px;
+    border-radius: 10px;
+    padding: 18px 33px;
+    transition: box-shadow 0.5s ease-out;
+}
+
+.btn-penguin:hover {
+    color: white;
+    box-shadow: 1px 1px 10px #666;
+}
+
+/* Style for Navbar */
+.navbar-nav .nav-item .nav-link {
+    font-weight: var(--fw-medium);
+    line-height: 24px;
+    color: #3C3C3C;
+    transition: transform 0.5s ease-out;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    transform: scale(1.1);
+}
+
+/* Style for banner */
+.banner-img {
+    max-width: 549px;
+    max-height: 559px;
+    margin-top: 45px;
+}
+
+@media only screen and (min-width: 600px){
+    .banner-img {
+        margin-top: 0;
+    }
+}
+
+
