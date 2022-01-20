@@ -82,6 +82,10 @@ h3 {
 }
 
 /* Common Style */
+section {
+    margin-top: 70px;
+}
+
 .btn-penguin {
     background-image: var(--gradient-bg);
     color: white;
@@ -96,6 +100,13 @@ h3 {
 .btn-penguin:hover {
     color: white;
     box-shadow: 1px 1px 10px #666;
+}
+
+/*======================
+  Style Header Section
+========================*/
+header {
+    background-color: #FFFBF0;
 }
 
 /* Style for Navbar */
