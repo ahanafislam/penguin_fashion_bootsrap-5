@@ -148,6 +148,7 @@ header {
 .card {
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
     border-radius: 20px;
+    border: none;
 }
 .card-img-top {
     background-color: #F1F1F1;
@@ -156,4 +157,28 @@ header {
     height: 327px;
     padding: 22px;
     margin: 18px;
+}
+
+/* Style Info Section */
+.info-text {
+    text-align: center;
+}
+
+.info-text h3{
+    margin: 15px auto;
+}
+.info-img img {
+    max-width: 292px;
+    max-height: 172px;
+}
+
+@media only screen and (min-width: 600px) {
+    .info-text {
+        text-align: left;
+    }
+
+    .info-img img {
+        max-width: 599px;
+        max-height: 354px;
+    }
 }
